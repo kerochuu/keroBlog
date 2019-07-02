@@ -1,4 +1,5 @@
 <template>
+
   <v-card>
     <v-img :src="imgSrc" height="200px">
     </v-img>
@@ -9,6 +10,7 @@
       </div>
     </v-card-title>
   </v-card>
+
 </template>
 
 <script>
@@ -24,7 +26,13 @@ export default {
 		return {
 			//
 		}
-	}
+	},
+  methods: {
+      detailInfo: function (message, event) {
+
+        if (event) event.preventDefault()
+        alert(message)
+       }
+     }
 }
 </script>
-

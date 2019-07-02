@@ -1,4 +1,5 @@
 import Vue from 'vue'
+import './plugins/vuetify'
 import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
 import VueSimplemde from 'vue-simplemde'
