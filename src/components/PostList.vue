@@ -1,10 +1,11 @@
 <template>
   <v-layout row wrap mw-700>
     <v-flex v-for="i in posts.length > limits ? limits : posts.length" :class="'xs' + 12 / column" px-3>
+
       <Post
               :date="posts[i - 1].created_at"
               :title="posts[i - 1].title"
-              :body="posts[i - 1].body"></Post>
+              :body="posts[i - 1].body | truncate"></Post>
       <v-divider></v-divider>
     </v-flex>
     <v-flex xs12 text-xs-center round my-5 v-if="loadMore">
@@ -13,6 +14,7 @@
   </v-layout>
 </template>
 <script>
+
 import Post from '@/components/Post'
 import FirebaseService from '@/services/FirebaseService'
 
@@ -28,6 +30,16 @@ export default {
 			posts: []
 		}
 	},
+  filters: {
+    truncate: function(value) {
+     let length = 20;
+     if (value.length <= length) {
+       return value;
+     } else {
+       return value.substring(0, length) + '...';
+     }
+   }
+  },
 	components: {
 		Post
 	},
@@ -39,7 +51,7 @@ export default {
 			this.posts = await FirebaseService.getPosts()
 		},
 		loadMorePosts() {
-
+      this.limits = limits+3;
     }
 	}
 }

@@ -6,12 +6,20 @@ const POSTS = 'posts'
 const PORTFOLIOS = 'portfolios'
 
 // Setup Firebase
+/*const config = {
+    projectId: 'webmobile-base',
+    authDomain: 'webmobile-base.firebaseapp.com',
+    apiKey: 'AIzaSyD049THtbF4aobueRd1XXQOtccg7HFkLrY',
+    databaseURL: 'https://webmobile-base.firebaseio.com',
+    storageBucket: 'gs://webmobile-base.appspot.com'
+}*/
+
 const config = {
-	projectId: 'elice-ssafy',
-	authDomain: 'elice-ssafy.firebaseapp.com',
-	apiKey: 'AIzaSyCax1KLYHHlLEoxNkRIW8efgUBWooyEB2Q',
-	databaseURL: 'https://elice-ssafy.firebaseio.com',
-	storageBucket: 'gs://elice-ssafy.appspot.com'
+   projectId: 'seungmi-9b62b',
+   authDomain: 'seungmi-9b62b.firebaseapp.com',
+   apiKey: 'AIzaSyA7quezEBiJqKHI-T1q62dthossqGXtJFM',
+   databaseURL: 'https://seungmi-9b62b.firebaseio.com',
+   storageBucket: 'gs://seungmi-9b62b.appspot.com'
 }
 
 firebase.initializeApp(config)
