@@ -15,14 +15,17 @@ npm run serve
 npm run build
 ```
 
-<img src="ScreenShot/classDiagram.cld.jpg">
+
 
 
 Req. 1-1 header, footer 구현
+<img src="ScreenShot/req11.png">
 
 Req. 1-2 header 영역에 블로그 제목 노출 구현
+<img src="ScreenShot/req12.png">
 
 Req. 1-3 스크롤시 헤더가 같이 움직이도록 구현
+<img src="ScreenShot/req13.png">
 
 Req. 1-4 메인 이미지 영역이 새로고침시 마다 변경 되도록 구현
 
