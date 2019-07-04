@@ -41,7 +41,7 @@ Req. 1-5 반응형 웹 사이트 구현
 
 Req. 1-6 반응형 웹 사이트 구현
 	모바일 사이즈에서 4행 1열 노출로 변경
-	태블릿 사이즈에서 2행 2열 노출로 변경
+	태블릿 사이즈에서 2행 2열 노출로 변경(temp)
 <img src="ScreenShot/req16_1.png">
 <img src="ScreenShot/req16_2.png">
 
